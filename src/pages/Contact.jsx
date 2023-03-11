@@ -4,11 +4,11 @@ import CONTACT from "../assets/contact.png";
 const Contact = () => {
   return (
     <div className="text-white">
-      <div className="body2 flex justify-center items-center text-center">
+      <div class="body2 flex justify-center items-center text-center">
         <img
           src={CONTACT}
           alt="festx"
-          className="mx-auto w-[300px] md:w-[450px] py-10"
+          class="mx-auto w-[300px] md:w-[450px] py-10"
         />
       </div>
       <div className="body-rest pt-20 pb-10">

@@ -28,27 +28,27 @@ const tabs = [
     label: "Rules",
     value: "tab2",
     content: (
-      <div className="p-4">
-        <ul className="list-disc text-xl lg:text-2xl text-justify p-4 leading-loose">
-          <li className="break-words">
+      <div class="p-4">
+        <ul class="list-disc text-xl lg:text-2xl text-justify p-4 leading-loose">
+          <li class="break-words">
             Length of the film should be minimum 5 mins and should not exceed 15
             mins.
           </li>
-          <li className="break-words">
+          <li class="break-words">
             The content in the film should not have any profanity or abuse.
           </li>
-          <li className="break-words">
+          <li class="break-words">
             The content should be original and should not have any copyright
             content.
           </li>
-          <li className="break-words">
+          <li class="break-words">
             Credits card of the film must be mentioned.
           </li>
-          <li className="break-words">
+          <li class="break-words">
             Prizes are given under three categories, Best actor/actress,
             BestDirector, Best Film.
           </li>
-          <li className="break-words">
+          <li class="break-words">
             Judges decision will be final and binding.
           </li>
         </ul>
@@ -73,8 +73,8 @@ const LightsOn = () => {
   const [activeTab, setActiveTab] = useState(tabs[0].value);
   const activeContent = tabs.find((tab) => tab.value === activeTab)?.content;
   return (
-    <div>
-      <div className="body3 text-white pt-36 sm:pt-20 md:pt-40 lg:pt-40 xl:pt-40 2xl:pt-40 pb-20 px-12 flex flex-col justify-center items-center mx-auto max-w-full">
+    <div className="body3">
+      <div className="text-white pt-36 sm:pt-20 md:pt-40 lg:pt-40 xl:pt-40 2xl:pt-40 pb-20 px-12 flex flex-col justify-center items-center mx-auto max-w-full">
         <h1 className="text-amber-400 font-bold text-center text-3xl lg:text-4xl">
           LIGHTS ON
         </h1>
@@ -111,7 +111,7 @@ const LightsOn = () => {
         </div>
       </div>
 
-      <div className="body-rest text-white pb-20 pt-20">
+      <div className="text-white pb-20 pt-20">
         <div className="flex-row justify-center items-center">
           <TabBar
             setActiveTab={setActiveTab}

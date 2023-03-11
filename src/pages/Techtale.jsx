@@ -42,8 +42,8 @@ const Techtale = () => {
   const [activeTab, setActiveTab] = useState(tabs[0].value);
   const activeContent = tabs.find((tab) => tab.value === activeTab)?.content;
   return (
-    <div>
-      <div className="body3 text-white pt-36 sm:pt-20 md:pt-40 lg:pt-40 xl:pt-40 2xl:pt-40 pb-20 px-12 flex flex-col justify-center items-center mx-auto max-w-full">
+    <div className="body3">
+      <div className="text-white pt-36 sm:pt-20 md:pt-40 lg:pt-40 xl:pt-40 2xl:pt-40 pb-20 px-12 flex flex-col justify-center items-center mx-auto max-w-full">
         <h1 className="text-amber-400 font-bold text-center text-3xl lg:text-4xl">
           TECH TALE
         </h1>
@@ -87,7 +87,7 @@ const Techtale = () => {
         </div>
       </div>
 
-      <div className="body-rest text-white pb-20 pt-20">
+      <div className="text-white pb-20 pt-20">
         <div className="flex-row justify-center items-center">
           <TabBar
             setActiveTab={setActiveTab}

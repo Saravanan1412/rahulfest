@@ -10,11 +10,11 @@ import { RiFundsBoxLine } from "react-icons/ri";
 const Events = () => {
   return (
     <div className="text-white">
-      <div className="body2 flex justify-center items-center text-center">
+      <div class="body2 flex justify-center items-center text-center">
         <img
           src={EVENT}
           alt="festx"
-          className="mx-auto w-[300px] md:w-[400px] py-10"
+          class="mx-auto w-[300px] md:w-[400px] py-10"
         />
       </div>
       <div className="body-rest">

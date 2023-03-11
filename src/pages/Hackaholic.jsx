@@ -78,42 +78,42 @@ const tabs = [
     label: "Rules",
     value: "tab3",
     content: (
-      <div className="p-4">
-        <ul className="list-disc text-xl lg:text-2xl text-justify p-4 leading-loose">
-          <li className="break-words">
+      <div class="p-4">
+        <ul class="list-disc text-xl lg:text-2xl text-justify p-4 leading-loose">
+          <li class="break-words">
             Hackathon teams will be a maximum of 4 people.
           </li>
-          <li className="break-words">
+          <li class="break-words">
             Teams should be made up exclusively of students who are not
             organizers, volunteers, judges, sponsors, or in any other privileged
             position at the event.
           </li>
-          <li className="break-words">
+          <li class="break-words">
             A team can submit only one entry for the hackathon. Participation at
             the hackathon is subjected on a “per-team” basis meaning you are not
             allowed to be on more than one team at the event.
           </li>
-          <li className="break-words">
+          <li class="break-words">
             Each prototype or mock-up presented at the hackathon must be an
             original work.
           </li>
-          <li className="break-words">
+          <li class="break-words">
             Teams must stop hacking once the time is up. However, teams are
             allowed to debug and make small fixes to their programs after time
             is up.
           </li>
-          <li className="break-words">
+          <li class="break-words">
             Projects that violate the Code of Conduct are not allowed.
           </li>
-          <li className="break-words">
+          <li class="break-words">
             Teams that make it to the final round will be given up to ten
             minutes to present their finished project to a panel of judges.
           </li>
-          <li className="break-words">
+          <li class="break-words">
             All the necessary components / Laptop / Equipments / Tools to be
             brought by participants itself.
           </li>
-          <li className="break-words">Jury team Decision will be final.</li>
+          <li class="break-words">Jury team Decision will be final.</li>
         </ul>
       </div>
     ),
@@ -136,8 +136,8 @@ const Hackaholic = () => {
   const [activeTab, setActiveTab] = useState(tabs[0].value);
   const activeContent = tabs.find((tab) => tab.value === activeTab)?.content;
   return (
-    <div>
-      <div className="body3 text-white pt-36 sm:pt-20 md:pt-40 lg:pt-40 xl:pt-40 2xl:pt-40 pb-20 px-12 flex flex-col justify-center items-center mx-auto max-w-full">
+    <div className="body3">
+      <div className="text-white pt-36 sm:pt-20 md:pt-40 lg:pt-40 xl:pt-40 2xl:pt-40 pb-20 px-12 flex flex-col justify-center items-center mx-auto max-w-full">
         <h1 className="text-amber-400 font-bold text-center text-3xl lg:text-4xl">
           HACKAHOLIC
         </h1>
@@ -170,7 +170,7 @@ const Hackaholic = () => {
         </div>
       </div>
 
-      <div className="body-rest text-white pb-20 pt-20">
+      <div className="text-white pb-20 pt-20">
         <div className="flex-row justify-center items-center">
           <TabBar
             setActiveTab={setActiveTab}
