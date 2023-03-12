@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TabBar from "../components/TabBar";
 import PQC from "../assets/PQC.png";
 import Calendar from "../assets/calendar.png";
-
+import Footer from "../components/Footer";
 const tabs = [
   {
     label: "Details",
@@ -81,11 +81,11 @@ const tabs = [
     label: "Rules",
     value: "tab3",
     content: (
-      <div class="p-4">
-        <ul class="list-disc text-xl lg:text-2xl text-justify p-4 leading-loose">
-          <li class="break-words">This is an offline event.</li>
-          <li class="break-words">Only Solo participants.</li>
-          <li class="break-words">This event consists of 2 rounds.</li>
+      <div className="p-4">
+        <ul className="list-disc text-xl lg:text-2xl text-justify p-4 leading-loose">
+          <li className="break-words">This is an offline event.</li>
+          <li className="break-words">Only Solo participants.</li>
+          <li className="break-words">This event consists of 2 rounds.</li>
         </ul>
       </div>
     ),
@@ -108,8 +108,8 @@ const ParagonQuest = () => {
   const [activeTab, setActiveTab] = useState(tabs[0].value);
   const activeContent = tabs.find((tab) => tab.value === activeTab)?.content;
   return (
-    <div className="body3">
-      <div className="text-white pt-36 sm:pt-20 md:pt-40 lg:pt-40 xl:pt-40 2xl:pt-40 pb-20 px-12 flex flex-col justify-center items-center mx-auto max-w-full">
+    <div>
+      <div className="body3 text-white pt-36 sm:pt-20 md:pt-40 lg:pt-40 xl:pt-40 2xl:pt-40 pb-20 px-12 flex flex-col justify-center items-center mx-auto max-w-full">
         <h1 className="text-amber-400 font-bold text-center text-3xl lg:text-4xl">
           PARAGON QUEST
         </h1>
@@ -141,7 +141,7 @@ const ParagonQuest = () => {
         </div>
       </div>
 
-      <div className="text-white pb-20 pt-20">
+      <div className="body-rest text-white pb-20 pt-20">
         <div className="flex-row justify-center items-center">
           <TabBar
             setActiveTab={setActiveTab}
@@ -162,6 +162,7 @@ const ParagonQuest = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

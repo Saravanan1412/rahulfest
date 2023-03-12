@@ -38,7 +38,7 @@ function App() {
           <Route path="/tech-tale" element={<Techtale />} />
         </Routes>
       </div>
-      <Footer />
+      
     </>
   );
 }

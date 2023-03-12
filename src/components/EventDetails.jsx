@@ -66,7 +66,7 @@ export default function EventDetails(props) {
   const activeContent = tabs.find((tab) => tab.value === activeTab)?.content;
   return (
     <div className="body-rest scroll-smooth text-white pt-56 pb-20 px-12">
-      <h1 className="text-amber-400	font-bold text-center text-3xl lg:text-4xl">
+      <h1 className="text-[#5304bd]	font-bold text-center text-3xl lg:text-4xl">
         {props.event.title}
       </h1>
 

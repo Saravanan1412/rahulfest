@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TabBar from "../components/TabBar";
 import PTI from "../assets/PTI.png";
 import Calendar from "../assets/calendar.png";
+import Footer from "../components/Footer";
 
 const tabs = [
   {
@@ -28,20 +29,20 @@ const tabs = [
     label: "Rules",
     value: "tab2",
     content: (
-      <div class="p-4">
-        <ul class="list-disc text-xl lg:text-2xl text-justify p-4 leading-loose">
-          <li class="break-words">
+      <div className="p-4">
+        <ul className="list-disc text-xl lg:text-2xl text-justify p-4 leading-loose">
+          <li className="break-words">
             A perfect setup of innovators is present to whom teams have to
             showcase their expertise and understanding into building innovative
             solutions.
           </li>
-          <li class="break-words">
+          <li className="break-words">
             Proposal attracts innovation oriented tech driven Investors.
           </li>
-          <li class="break-words">
+          <li className="break-words">
             The team can nurture the idea and help it grow towards designing.
           </li>
-          <li class="break-words">
+          <li className="break-words">
             Investors can generate ample ideas through proposals generating
             innovative thoughts from the attendees which later can also be
             nurtured and directly merged with the existing product line.
@@ -68,8 +69,8 @@ const Pitchup = () => {
   const [activeTab, setActiveTab] = useState(tabs[0].value);
   const activeContent = tabs.find((tab) => tab.value === activeTab)?.content;
   return (
-    <div className="body3">
-      <div className="text-white pt-36 sm:pt-20 md:pt-40 lg:pt-40 xl:pt-40 2xl:pt-40 pb-20 px-12 flex flex-col justify-center items-center mx-auto max-w-full">
+    <div>
+      <div className="body3 text-white pt-36 sm:pt-20 md:pt-40 lg:pt-40 xl:pt-40 2xl:pt-40 pb-20 px-12 flex flex-col justify-center items-center mx-auto max-w-full">
         <h1 className="text-amber-400 font-bold text-center text-3xl lg:text-4xl">
           PROPOSE TO INVESTOR
         </h1>
@@ -100,7 +101,7 @@ const Pitchup = () => {
         </div>
       </div>
 
-      <div className="text-white pb-20 pt-20">
+      <div className="body-rest text-white pb-20 pt-20">
         <div className="flex-row justify-center items-center">
           <TabBar
             setActiveTab={setActiveTab}
@@ -121,6 +122,7 @@ const Pitchup = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
